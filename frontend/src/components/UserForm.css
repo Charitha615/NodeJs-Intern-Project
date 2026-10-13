@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #00008B, #C11C84);
+
+    padding: 20px;
+}
+
+.user-card {
+    width: 100%;
+    max-width: 500px;
+
+    background: #0B083E;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.form-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.form-header h1 {
+    margin: 0;
+
+    font-size: 30px;
+
+    color: #FFFFFF;
+}
+
+.form-header p {
+    margin-top: 8px;
+
+    color: #d9d9e8;
+
+    font-size: 14px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #FFFFFF;
+}
+
+.input-group input {
+    width: 600px;
+
+    padding: 13px 14px;
+
+    border: 1px solid #4b4778;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: #15114d;
+
+    color: #FFFFFF;
+
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #C11C84;
+
+    box-shadow: 0 0 0 3px rgba(193, 28, 132, 0.2);
+}
+
+.input-group input::placeholder {
+    color: #aaa8c5;
+}
+
+.input-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #C11C84
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(193, 28, 132, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.success-message {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: rgba(34, 197, 94, 0.15);
+
+    border: 1px solid rgba(34, 197, 94, 0.4);
+
+    color: #86efac;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.error-message {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: rgba(239, 68, 68, 0.15);
+
+    border: 1px solid rgba(239, 68, 68, 0.4);
+
+    color: #fca5a5;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .user-card {
+        padding: 25px;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .form-header h1 {
+        font-size: 25px;
+    }
+}

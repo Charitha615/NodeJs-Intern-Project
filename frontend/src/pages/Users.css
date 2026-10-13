@@ -1,0 +1,27 @@
+.users-page {
+    width: 100%;
+
+    min-height: calc(100vh - 75px);
+
+    padding: 45px 40px 60px;
+}
+
+.users-page-heading {
+    margin-bottom: 25px;
+}
+
+.users-page-heading h2 {
+    margin: 0;
+
+    color: #FFFFFF;
+
+    font-size: 30px;
+}
+
+.users-page-heading p {
+    margin-top: 6px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+}
